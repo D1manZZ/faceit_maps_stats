@@ -1,4 +1,30 @@
 {% extends 'maps/form.html' %}
 {% block stuff %}
-{{ maps }}
+    <div class="shield container" style="width: 100%; display: flex; text-align: center; padding-top: 70px;">
+        <div class="team_left col-4">
+            <p>team_left</p>
+            <p>
+
+            </p>
+        </div>
+        <div class="middle col-4">
+            <p>VS</p>
+            <p>
+                {% for map, stats in main.differences.items %}
+                    <div class="card text-dark bg-light mb-3">
+                        <div class="card-header">{{ map }}</div>
+                        <div class="card-body">
+                            {% for stat, value in stats.items %}
+                            <h5 class="card-title">{{ stat }}</h5>
+                            <p class="card-text">{{ value }}%</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+    </p>
+    </div>
+    <div class="team-right col-4">
+        team right
+    </div>
+    </div>
 {% endblock %}

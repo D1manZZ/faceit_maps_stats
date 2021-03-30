@@ -48,5 +48,20 @@ def logic(x):
                 if nick in (players_list[-1], players_list[len(players_list) // 2 - 1]):
                     average_data[detector][map_name][stat] = round(average_data[detector][map_name][stat] / (len(players_list) // 2), 2)
     differences = {}
-    for 
-    return average_data
+    for map_name, stats in average_data['team_left'].items():
+        differences[map_name] = {}
+        total = 0
+        for stat, value in stats.items():
+            differences[map_name][stat] = round(average_data['team_left'][map_name][stat] * 100 / (average_data['team_left'][map_name][stat] + average_data['team_right'][map_name][stat]) - (100 - (average_data['team_left'][map_name][stat] * 100 / (average_data['team_left'][map_name][stat] + average_data['team_right'][map_name][stat]))), 2)
+            total += differences[map_name][stat]
+        differences[map_name]['total'] = round(total / 3, 2)
+    differences = dict(sorted(differences.items(), key=lambda k: k[1]['total'], reverse=True))
+
+    mega_dict = {}
+
+    return {'differences': differences, 'average_data': average_data}
+
+    # Сделать чтобы я был всегда слева
+    # Добавить процент выпадания карты
+    # Добавить весы для каждого игрока взависимости от его эло
+    # Объеденить все словари в один большой

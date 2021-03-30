@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import FormView, TemplateView
 from .forms import LinkMatch
@@ -8,6 +7,7 @@ link = 'no_link'
 
 
 class SetLink(FormView):
+
     template_name = 'maps/form.html'
     form_class = LinkMatch
     success_url = reverse_lazy('view_maps')
@@ -19,9 +19,10 @@ class SetLink(FormView):
 
 
 class ViewMaps(TemplateView):
+
     template_name = 'maps/maps.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['maps'] = logic(link)
+        context['main'] = logic(link)
         return context
