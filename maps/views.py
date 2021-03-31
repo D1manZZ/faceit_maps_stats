@@ -26,3 +26,8 @@ class ViewMaps(TemplateView):
         context = super().get_context_data(**kwargs)
         context['main'] = logic(link)
         return context
+
+
+class About(TemplateView):
+
+    template_name = 'maps/about.html'

@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = [
     path('', SetLink.as_view(), name='set_link'),
-    path('view_maps/', ViewMaps.as_view(), name='view_maps')
+    path('view_maps/', ViewMaps.as_view(), name='view_maps'),
+    path('about/', About.as_view(), name='about')
 ]

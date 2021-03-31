@@ -14,8 +14,8 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-STATIC_ROOT = BASE_DIR.joinpath('static')
-MEDIA_ROOT = BASE_DIR.joinpath('media')
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'static')
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
 
 
 # Quick-start development settings - unsuitable for production
@@ -122,3 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+STATICFILES_DIRS = [
+    Path.joinpath(BASE_DIR, 'maps/static')
+]
