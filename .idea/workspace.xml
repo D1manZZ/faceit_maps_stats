@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77af3409-731f-4ede-8122-4cda364c7b1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/maps/logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maps/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maps/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maps/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maps/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maps/maps.html" afterDir="false" />
-    </list>
+    <list default="true" id="77af3409-731f-4ede-8122-4cda364c7b1a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +94,7 @@
       <workItem from="1616962923033" duration="86000" />
       <workItem from="1616963010644" duration="8117000" />
       <workItem from="1617100670901" duration="18814000" />
-      <workItem from="1617133266333" duration="12689000" />
+      <workItem from="1617133266333" duration="13003000" />
     </task>
     <servers />
   </component>
