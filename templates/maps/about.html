@@ -1,0 +1,13 @@
+{% extends 'maps/form.html' %}
+{% load static %}
+{% block stuff %}
+    <div class="container" style="padding-top: 80px; font-size: 20px;">
+        <h1 style="margin-bottom: 20px;">Как это работает?</h1>
+    <p>С помощью данного сайта вы сможете узнать какую карту пикать на фейсите против конкретного противника. Всё что вам нужно, это зайти на страницу матча и выделить все ники участников, как показано на фото:</p>
+        <p><img src="{% static 'img/tutorial_1.png' %}" class="col-sm-12 col-md-10" style="max-width: 100%; border: 5px solid red; border-radius: 5px;"></p>
+        <p style="visibility: hidden;">s</p>
+        <p>Затем идём на страничку "Указать участников" и просто вставляем скопированные ники:</p>
+        <p><img src="{% static 'img/Tutorial_2.png' %}" class="col-sm-12 col-md-10" style="max-width: 100%; border: 5px solid red; border-radius: 5px;"></p>
+        <p>Готово, теперь вы можете узнать какие карты противники играют хуже всего, сортировка производится от лучшой карты по разнице показателей</p>
+    </div>
+{% endblock %}
